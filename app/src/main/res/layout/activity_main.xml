@@ -27,9 +27,11 @@
                 app:icon="@drawable/remove_white"
                 app:cornerRadius="32dp"
                 app:backgroundTint="@color/green"
-                android:text="Remove"/>
+                android:text="Remove"
+                android:onClick="onClick"/>
 
             <TextView
+                android:id="@+id/green_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -50,7 +52,8 @@
                 app:icon="@drawable/add_white"
                 app:cornerRadius="32dp"
                 app:backgroundTint="@color/green"
-                android:text="Add"/>
+                android:text="Add"
+                android:onClick="onClick"/>
 
         </RelativeLayout>
 
@@ -71,9 +74,11 @@
                 app:icon="@drawable/remove_white"
                 app:cornerRadius="32dp"
                 app:backgroundTint="@color/blue"
-                android:text="Remove"/>
+                android:text="Remove"
+                android:onClick="onClick"/>
 
             <TextView
+                android:id="@+id/blue_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -94,7 +99,8 @@
                 app:icon="@drawable/add_white"
                 app:backgroundTint="@color/blue"
                 app:cornerRadius="32dp"
-                android:text="Add"/>
+                android:text="Add"
+                android:onClick="onClick"/>
 
         </RelativeLayout>
 
@@ -114,9 +120,11 @@
                 app:icon="@drawable/remove_white"
                 app:cornerRadius="32dp"
                 app:backgroundTint="@color/purple"
-                android:text="Remove"/>
+                android:text="Remove"
+                android:onClick="onClick"/>
 
             <TextView
+                android:id="@+id/purple_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -137,7 +145,8 @@
                 app:icon="@drawable/add_white"
                 app:backgroundTint="@color/purple"
                 app:cornerRadius="32dp"
-                android:text="Add"/>
+                android:text="Add"
+                android:onClick="onClick"/>
 
         </RelativeLayout>
 
@@ -157,9 +166,11 @@
                 app:icon="@drawable/remove_white"
                 app:cornerRadius="32dp"
                 app:backgroundTint="@color/orange"
-                android:text="Remove"/>
+                android:text="Remove"
+                android:onClick="onClick"/>
 
             <TextView
+                android:id="@+id/orange_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -180,7 +191,8 @@
                 app:icon="@drawable/add_white"
                 app:backgroundTint="@color/orange"
                 app:cornerRadius="32dp"
-                android:text="Add"/>
+                android:text="Add"
+                android:onClick="onClick"/>
 
         </RelativeLayout>
 
@@ -200,9 +212,11 @@
                 app:icon="@drawable/remove_white"
                 app:cornerRadius="32dp"
                 app:backgroundTint="@color/pink"
-                android:text="Remove"/>
+                android:text="Remove"
+                android:onClick="onClick"/>
 
             <TextView
+                android:id="@+id/pink_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -223,7 +237,8 @@
                 app:icon="@drawable/add_white"
                 app:backgroundTint="@color/pink"
                 app:cornerRadius="32dp"
-                android:text="Add"/>
+                android:text="Add"
+                android:onClick="onClick"/>
 
         </RelativeLayout>
 
@@ -243,9 +258,11 @@
                 app:icon="@drawable/remove_white"
                 app:cornerRadius="32dp"
                 app:backgroundTint="@color/grey"
-                android:text="Remove"/>
+                android:text="Remove"
+                android:onClick="onClick"/>
 
             <TextView
+                android:id="@+id/grey_total"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -266,7 +283,8 @@
                 app:icon="@drawable/add_white"
                 app:backgroundTint="@color/grey"
                 app:cornerRadius="32dp"
-                android:text="Add"/>
+                android:text="Add"
+                android:onClick="onClick"/>
 
         </RelativeLayout>
 
@@ -286,7 +304,8 @@
             android:layout_width="wrap_content"
             android:layout_gravity="center"
             android:text="Clear"
-            app:cornerRadius="32dp"/>
+            app:cornerRadius="32dp"
+            android:onClick="clear" />
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
