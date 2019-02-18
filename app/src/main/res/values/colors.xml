@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#e73f0c</color>
+    <color name="colorPrimaryDark">#ad0000</color>
+    <color name="colorAccent">#E73F0C</color>
+    <color name="textOnPrimaryColor">#FFFFFF</color>
+
+    <!-- Plates -->
+    <color name="green">#bbd034</color>
+    <color name="blue">#00a2e3</color>
+    <color name="purple">#59358c</color>
+    <color name="orange">#ec6608</color>
+    <color name="pink">#df1d84</color>
+    <color name="grey">#9eb4b6</color>
 </resources>

@@ -1,18 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:id="@+id/green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/remove_white"
+                app:cornerRadius="32dp"
+                app:backgroundTint="@color/green"
+                android:text="Remove"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/add_white"
+                app:cornerRadius="32dp"
+                app:backgroundTint="@color/green"
+                android:text="Add"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/remove_white"
+                app:cornerRadius="32dp"
+                app:backgroundTint="@color/blue"
+                android:text="Remove"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/add_white"
+                app:backgroundTint="@color/blue"
+                app:cornerRadius="32dp"
+                android:text="Add"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/remove_white"
+                app:cornerRadius="32dp"
+                app:backgroundTint="@color/purple"
+                android:text="Remove"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/add_white"
+                app:backgroundTint="@color/purple"
+                app:cornerRadius="32dp"
+                android:text="Add"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/remove_white"
+                app:cornerRadius="32dp"
+                app:backgroundTint="@color/orange"
+                android:text="Remove"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/add_white"
+                app:backgroundTint="@color/orange"
+                app:cornerRadius="32dp"
+                android:text="Add"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/remove_white"
+                app:cornerRadius="32dp"
+                app:backgroundTint="@color/pink"
+                android:text="Remove"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/add_white"
+                app:backgroundTint="@color/pink"
+                app:cornerRadius="32dp"
+                android:text="Add"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/remove_white"
+                app:cornerRadius="32dp"
+                app:backgroundTint="@color/grey"
+                android:text="Remove"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_alignParentEnd="true"
+                style="@style/Widget.MaterialComponents.Button.IconButton"
+                app:icon="@drawable/add_white"
+                app:backgroundTint="@color/grey"
+                app:cornerRadius="32dp"
+                android:text="Add"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
