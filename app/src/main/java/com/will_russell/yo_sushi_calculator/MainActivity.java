@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.material.button.MaterialButton;
+
+import org.w3c.dom.Text;
+
 
 public class MainActivity extends AppCompatActivity {
     TextView green_tv;
@@ -14,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     TextView orange_tv;
     TextView pink_tv;
     TextView grey_tv;
+    TextView price_tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         orange_tv = (TextView) findViewById(R.id.orange_total);
         pink_tv = (TextView) findViewById(R.id.pink_total);
         grey_tv = (TextView) findViewById(R.id.grey_total);
-
+        price_tv = (TextView) findViewById(R.id.total_cost_text);
     }
 
     public void onClick(View v) {
@@ -75,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         int value = Integer.parseInt(text);
         value++;
         tv.setText(String.valueOf(value));
+        increasePrice(tv);
     }
 
     public void remove(TextView tv) {
@@ -84,8 +90,52 @@ public class MainActivity extends AppCompatActivity {
         if (value != 0) {
             value--;
             tv.setText(String.valueOf(value));
+            decreasePrice(tv);
         }
     }
+
+    public void increasePrice(TextView tv) {
+
+        if (tv.equals(green_tv)) {
+            changePrice(2.30);
+        } else if (tv.equals(blue_tv)) {
+            changePrice(3.00);
+        } else if (tv.equals(purple_tv)) {
+            changePrice(4.00);
+        } else if (tv.equals(orange_tv)) {
+            changePrice(4.50);
+        } else if (tv.equals(pink_tv)) {
+            changePrice(5.00);
+        } else if (tv.equals(grey_tv)) {
+            changePrice(5.50);
+        }
+    }
+
+    public void decreasePrice(TextView tv) {
+        if (tv.equals(green_tv)) {
+            changePrice(-2.30);
+        } else if (tv.equals(blue_tv)) {
+            changePrice(-3.00);
+        } else if (tv.equals(purple_tv)) {
+            changePrice(-4.00);
+        } else if (tv.equals(orange_tv)) {
+            changePrice(-4.50);
+        } else if (tv.equals(pink_tv)) {
+            changePrice(-5.00);
+        } else if (tv.equals(grey_tv)) {
+            changePrice(-5.50);
+        }
+    }
+
+    public void changePrice(double change) {
+        String text = price_tv.getText().toString();
+        double value = Double.parseDouble(text.substring(1));
+        value += change;
+        value = Math.round(value * 100d) / 100d;
+        String total = "£" + String.valueOf(value) + 0;
+        price_tv.setText(total);
+    }
+
 
     public void clear(View v) {
         green_tv.setText("0");
@@ -94,5 +144,6 @@ public class MainActivity extends AppCompatActivity {
         orange_tv.setText("0");
         pink_tv.setText("0");
         grey_tv.setText("0");
+        price_tv.setText("£0.00");
     }
 }
