@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#ad0000</color>
     <color name="colorAccent">#E73F0C</color>
     <color name="textOnPrimaryColor">#FFFFFF</color>
+    <color name="textColor">#000000</color>
 
     <!-- Plates -->
     <color name="green">#bbd034</color>

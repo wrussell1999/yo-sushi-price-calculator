@@ -19,6 +19,7 @@
             android:paddingTop="16dp">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/green_left_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -28,7 +29,19 @@
                 app:backgroundTint="@color/green"
                 android:text="Remove"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/green_left_button"
+                android:layout_toLeftOf="@id/green_right_button"
+                android:text="0"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"/>
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/green_right_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -50,6 +63,7 @@
             android:paddingTop="8dp">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/blue_left_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -59,7 +73,19 @@
                 app:backgroundTint="@color/blue"
                 android:text="Remove"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/blue_left_button"
+                android:layout_toLeftOf="@id/blue_right_button"
+                android:text="0"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"/>
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/blue_right_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -80,6 +106,7 @@
             android:paddingTop="8dp">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/purple_left_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -89,7 +116,19 @@
                 app:backgroundTint="@color/purple"
                 android:text="Remove"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/purple_left_button"
+                android:layout_toLeftOf="@id/purple_right_button"
+                android:text="0"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"/>
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/purple_right_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -110,6 +149,7 @@
             android:paddingTop="8dp">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/orange_left_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -119,7 +159,19 @@
                 app:backgroundTint="@color/orange"
                 android:text="Remove"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/orange_left_button"
+                android:layout_toLeftOf="@id/orange_right_button"
+                android:text="0"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"/>
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/orange_right_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -140,6 +192,7 @@
             android:paddingTop="8dp">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/pink_left_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -149,7 +202,19 @@
                 app:backgroundTint="@color/pink"
                 android:text="Remove"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/pink_left_button"
+                android:layout_toLeftOf="@id/pink_right_button"
+                android:text="0"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"/>
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/pink_right_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
@@ -170,6 +235,7 @@
             android:paddingTop="8dp">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/grey_left_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -179,7 +245,19 @@
                 app:backgroundTint="@color/grey"
                 android:text="Remove"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/grey_left_button"
+                android:layout_toLeftOf="@id/grey_right_button"
+                android:text="0"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"/>
+
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/grey_right_button"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
