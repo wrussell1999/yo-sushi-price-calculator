@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView pink_tv;
     TextView grey_tv;
     TextView price_tv;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
