@@ -1,15 +1,9 @@
 package com.will_russell.yo_sushi_calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
-import com.google.android.material.button.MaterialButton;
-
-import org.w3c.dom.Text;
-
 
 public class MainActivity extends AppCompatActivity {
     TextView green_tv;
@@ -135,7 +129,6 @@ public class MainActivity extends AppCompatActivity {
         String total = "£" + String.valueOf(value) + 0;
         price_tv.setText(total);
     }
-
 
     public void clear(View v) {
         green_tv.setText("0");
