@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/buttons_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -63,7 +64,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:layout_below="@id/green">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/blue_left_button"
@@ -109,7 +111,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:layout_below="@id/blue">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/purple_left_button"
@@ -155,7 +158,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:layout_below="@id/purple">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/orange_left_button"
@@ -201,7 +205,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:layout_below="@id/orange">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/pink_left_button"
@@ -247,7 +252,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="8dp">
+            android:paddingTop="8dp"
+            android:layout_below="@id/pink">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/grey_left_button"
@@ -288,24 +294,32 @@
 
         </RelativeLayout>
 
-        <TextView
-            android:id="@+id/total_cost_text"
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="64dp"
-            android:layout_gravity="center"
-            android:textSize="64dp"
-            android:textColor="#000000"
-            android:text="£0.00" />
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="64dp">
+            <TextView
+                android:id="@+id/total_cost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="64dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="64dp"
+                android:textColor="#000000"
+                android:text="£0.00" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/clear_buton"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:text="Clear"
-            app:cornerRadius="32dp"
-            android:onClick="clear" />
-    </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clear_buton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/total_cost_text"
+                android:text="Clear"
+                app:cornerRadius="32dp"
+                android:onClick="clear" />
+        </RelativeLayout>
+    </RelativeLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
