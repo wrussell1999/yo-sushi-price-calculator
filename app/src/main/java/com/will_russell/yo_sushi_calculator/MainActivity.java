@@ -92,33 +92,33 @@ public class MainActivity extends AppCompatActivity {
     public void increasePrice(TextView tv) {
 
         if (tv.equals(green_tv)) {
-            changePrice(2.30);
+            changePrice(2.50);
         } else if (tv.equals(blue_tv)) {
-            changePrice(3.00);
+            changePrice(3.20);
         } else if (tv.equals(purple_tv)) {
-            changePrice(4.00);
+            changePrice(4.20);
         } else if (tv.equals(orange_tv)) {
-            changePrice(4.50);
+            changePrice(4.70);
         } else if (tv.equals(pink_tv)) {
-            changePrice(5.00);
+            changePrice(5.20);
         } else if (tv.equals(grey_tv)) {
-            changePrice(5.50);
+            changePrice(5.70);
         }
     }
 
     public void decreasePrice(TextView tv) {
         if (tv.equals(green_tv)) {
-            changePrice(-2.30);
+            changePrice(-2.50);
         } else if (tv.equals(blue_tv)) {
-            changePrice(-3.00);
+            changePrice(-3.20);
         } else if (tv.equals(purple_tv)) {
-            changePrice(-4.00);
+            changePrice(-4.20);
         } else if (tv.equals(orange_tv)) {
-            changePrice(-4.50);
+            changePrice(-4.70);
         } else if (tv.equals(pink_tv)) {
-            changePrice(-5.00);
+            changePrice(-5.20);
         } else if (tv.equals(grey_tv)) {
-            changePrice(-5.50);
+            changePrice(-5.70);
         }
     }
 
